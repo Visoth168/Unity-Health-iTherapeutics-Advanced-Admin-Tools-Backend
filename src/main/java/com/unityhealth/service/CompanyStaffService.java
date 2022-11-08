@@ -1,7 +1,7 @@
-package com.harindu.service;
+package com.unityhealth.service;
 
-import com.harindu.model.CompanyStaff;
-import com.harindu.repository.CompanyStaffRepository;
+import com.unityhealth.model.CompanyStaff;
+import com.unityhealth.repository.CompanyStaffRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;

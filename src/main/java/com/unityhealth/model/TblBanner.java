@@ -1,4 +1,4 @@
-package com.harindu.model;
+package com.unityhealth.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -6,34 +6,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class TblSlideShow {
+public class TblBanner {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     String name;
-    String active;
     LocalDate startDate;
     LocalDate endDate;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    private Set<TblBanner> banners = new HashSet<>();
-
-    public Set<TblBanner> getBanners() {
-        return banners;
-    }
-
-    public void setBanners(Set<TblBanner> banners) {
-        this.banners = banners;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -41,14 +20,6 @@ public class TblSlideShow {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getActive() {
-        return active;
-    }
-
-    public void setActive(String active) {
-        this.active = active;
     }
 
     public LocalDate getStartDate() {
@@ -65,6 +36,14 @@ public class TblSlideShow {
 
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }

@@ -1,4 +1,4 @@
-package com.harindu.model;
+package com.unityhealth.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;

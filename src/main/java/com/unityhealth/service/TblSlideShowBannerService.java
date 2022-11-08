@@ -1,11 +1,11 @@
-package com.harindu.service;
+package com.unityhealth.service;
 
-import com.harindu.model.TblBanner;
-import com.harindu.model.TblSlideShow;
-import com.harindu.model.TblSlideShowBanner;
-import com.harindu.repository.TblBannerRepository;
-import com.harindu.repository.TblSlideShowBannerRepository;
-import com.harindu.repository.TblSlideShowRepository;
+import com.unityhealth.model.TblBanner;
+import com.unityhealth.model.TblSlideShow;
+import com.unityhealth.model.TblSlideShowBanner;
+import com.unityhealth.repository.TblBannerRepository;
+import com.unityhealth.repository.TblSlideShowBannerRepository;
+import com.unityhealth.repository.TblSlideShowRepository;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

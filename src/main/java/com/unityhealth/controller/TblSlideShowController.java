@@ -1,7 +1,7 @@
-package com.harindu.controller;
+package com.unityhealth.controller;
 
-import com.harindu.model.TblSlideShow;
-import com.harindu.service.TblSlideShowService;
+import com.unityhealth.model.TblSlideShow;
+import com.unityhealth.service.TblSlideShowService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

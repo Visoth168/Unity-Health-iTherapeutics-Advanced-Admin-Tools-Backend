@@ -1,17 +1,20 @@
-package com.harindu.controller;
+package com.unityhealth.controller;
 
-import com.harindu.model.CompanyStaff;
-import com.harindu.service.CompanyStaffService;
+import com.unityhealth.model.CompanyStaff;
+import com.unityhealth.service.CompanyStaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashMap;
-
+import com.unityhealth.service.*;
 
 @RestController
 @CrossOrigin("*")
 public class CompanyStaffController {
+    @Autowired private accessService accessService;
+    @Autowired private ageService ageService;
+    @Autowired private titleService titleService;
 
     // Injecting company service class to call its methods to perform DB operations
     @Autowired private CompanyStaffService companyStaffService;
@@ -60,6 +63,18 @@ public class CompanyStaffController {
     @RequestMapping(path ="/all-staff", method = RequestMethod.GET)
     public ResponseEntity getAllStaff() {
         return companyStaffService.getAllStaff();
+    }
+    @RequestMapping(path ="/all-access", method = RequestMethod.GET)
+    public ResponseEntity getAllAccess() {
+        return accessService.getAllAccess();
+    }
+    @RequestMapping(path ="/all-age", method = RequestMethod.GET)
+    public ResponseEntity getAllAge() {
+        return ageService.getAllAge();
+    }
+    @RequestMapping(path ="/all-title", method = RequestMethod.GET)
+    public ResponseEntity getAllTitle() {
+        return titleService.getAllTitle();
     }
 
 }

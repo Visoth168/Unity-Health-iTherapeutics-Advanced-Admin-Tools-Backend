@@ -1,6 +1,6 @@
-package com.harindu.repository;
+package com.unityhealth.repository;
 
-import com.harindu.model.TblBanner;
+import com.unityhealth.model.TblBanner;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

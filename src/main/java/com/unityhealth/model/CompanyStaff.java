@@ -1,4 +1,4 @@
-package com.harindu.model;
+package com.unityhealth.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ public class CompanyStaff {
 
     private String company;
 
-    private Integer acl;
+    private String acl;
 
     private String accountType;
 
@@ -25,7 +25,7 @@ public class CompanyStaff {
     
     private String title;
     
-    private Integer age;
+    private String age;
     
     private String position;
     
@@ -43,11 +43,11 @@ public class CompanyStaff {
 		this.title = title;
 	}
 
-	public Integer getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 
@@ -99,11 +99,11 @@ public class CompanyStaff {
         this.company = company;
     }
 
-    public Integer getAcl() {
+    public String getAcl() {
         return acl;
     }
 
-    public void setAcl(Integer acl) {
+    public void setAcl(String acl) {
         this.acl = acl;
     }
 
